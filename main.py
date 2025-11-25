@@ -12,7 +12,7 @@ from sklearn.utils import resample
 
 data = pd.read_csv(r"C:\Users\taras\OneDrive\Desktop\CV_projects\Amazon_reviews_analysis\data\amazon_reviews.csv")
 
-# vectorization methods instead of apply
+# vectorization methods instead of apply.
 data['content'] = data['content'].fillna("").str.lower()
 data['content'] = data['content'].str.replace(f"[{re.escape(string.punctuation)}]", " ", regex=True)
 data['content'] = data['content'].str.replace(r"\d+", " ", regex=True)
