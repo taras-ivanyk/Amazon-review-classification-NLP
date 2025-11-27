@@ -74,5 +74,6 @@ The pipeline includes **data cleaning, TF-IDF vectorization, oversampling of the
 ## Launch
 
 ```bash
+download dataset
 pip install -r requirements.txt
 python main.py
